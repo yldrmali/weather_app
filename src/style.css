@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  min-width: 200px;
+  overflow: hidden;
+}
+
+/* header section */
+.header {
+  background: rgb(253, 187, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 50%
+  );
+  padding: 80px 40px 20px 40px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  min-height: 150px;
+}
+
+.header h1#city {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  border-bottom: 1px solid darkolivegreen;
+}
+
+img {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  transform: scale(1);
+}
+
+.header h3#weather {
+  position: absolute;
+  top:45px;
+  left: 20px;
+}
+.header p#time {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+.header i{
+  visibility: hidden;
+  position: absolute;
+  right:  5px;
+  top: 5px;
+}
+
+/* middle section */
+.main {
+  display: grid;
+  min-height: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: 'temp details';
+}
+
+.temp {
+  grid-area: temp;
+  display: flex;
+  font-size: 200%;
+  justify-content: center;
+  align-items: center;
+}
+
+div.details {
+  grid-area: details;
+  position: relative;
+}
+
+.details h3 {
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+.details ul.holder {
+  position: absolute;
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+.details ul.value {
+  position: absolute;
+  display: inline;
+  list-style-type: none;
+  right: 30px;
+}
+.details ul.value li,
+.details ul.holder li {
+  padding: 5px;
+  color: gray;
+}
+
+/* bottom */
+form {
+  padding: 30px 40px;
+}
+.form-control {
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+small {
+  visibility: hidden;
+}
+
+.form button {
+  background: rgb(253, 187, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 187, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 50%
+  );
+  border-color: rgb(253, 187, 29);
+  border-radius: 4px;
+  color: darkslategrey;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
