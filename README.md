@@ -5,9 +5,9 @@
 
   ## Getting Started
 
-  The project is a  practice for asynchronous programming.
-  Autocomplete search can be fullfilled with Google Places API(require API key). API scripts and codesare commented out.
-  Current weather data is fetched from OpenWeatherMap weather API
+  *The project is a  practice for asynchronous programming.
+  *Autocomplete search can be fullfilled with Google Places API(require API key). API scripts and codesare commented out.
+  *Current weather data is fetched from OpenWeatherMap weather API
 
 
   ## Built With
